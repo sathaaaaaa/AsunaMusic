@@ -214,8 +214,7 @@ async def play_command(client, message: Message):
         await msg.edit("❌ give me something to play in VC")
     
     elif '' in message.text:
-        text = message.text.split(None, 1)
-        vid = text[1]
+        vid = message.text.split(None, 1)[1]
         user_id = message.from_user.id
         user_name = message.from_user.first_name
         rpk = "[" + user_name + "](tg://user?id=" + str(user_id) + ")"
