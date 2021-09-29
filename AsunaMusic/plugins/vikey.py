@@ -436,4 +436,17 @@ async def play_command(client, message: Message):
                   caption="**playing the locally added file",
                   )
             await message.delete()
+
+
+@group_call.on_audio_playout_ended
+async def audio_ended_handler(_, __):
+    await sleep(3)
+    await group_call.stop()
+    print(f"[INFO] - AUDIO_CALL ENDED !")
+
+@group_call.on_video_playout_ended
+async def video_ended_handler(_, __):
+    await sleep(3)
+    await group_call.stop()
+    print(f"[INFO] - VIDEO_CALL ENDED !")
     
