@@ -180,11 +180,11 @@ async def play_command(client, message: Message):
     chatid = message.chat.id
     
     try:
-        await USER.get_me()
+        await user = USER.get_me()
     except:
         user.first_name = "helper"
-    
-    wow = USER.get_me()['id']
+    user = usar
+    wow = usar.id
     banned = client.get_chat_member(chatid, filter="kicked")
     try:
         await client.get_chat_member(chatid, wow)
