@@ -21,7 +21,7 @@ from helpers.decorators import authorized_users_only
 from pyrogram.types import InlineKeyboardButton, InlineKeyboardMarkup, CallbackQuery
 from helpers.admins import get_admins
 from config import que
-from AsunaMusic.plugins.nopm import User as USER
+from AsunaMusic.plugins import client as USER
 from helpers.queues import queues
 from helpers.filters import command, other_filters
 from PIL import Image, ImageDraw, ImageFont
