@@ -1,4 +1,5 @@
 import os
+import requests
 from pyrogram import Client, idle
 from config import API_ID, API_HASH, BOT_TOKEN
 from AsunaMusic.plugins import run
@@ -12,6 +13,11 @@ Bot = Client(
 )
 if not os.path.isdir("./downloads"):
     os.makedirs("./downloads")
+
+response = requests.get(BG_IMAGE)
+file = open("./etc/foreground.png", "wb")
+file.write(response.content)
+file.close()
 
 
 
