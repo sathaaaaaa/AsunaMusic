@@ -185,7 +185,6 @@ async def play_command(client, message: Message):
         user.first_name = "helper"
     usar = user
     wow = usar.id
-    banned = client.get_chat_members(chatid, filter="kicked")
     try:
         await client.get_chat_member(chatid, wow)
     except:
@@ -202,10 +201,7 @@ async def play_command(client, message: Message):
                 except UserAlreadyParticipant:
                     pass
                 except Exception:
-                    if wow in  banned:
-                        await msg.edit("**❌User bot is banned in this chat! Please unban it first")
-                    else:
-                        await msg.edit("**🟥 Flood wait error")
+                    await msg.edit("**🟥 Flood wait error")
     try:
         await USER.get_chat(chatid)
     except:
