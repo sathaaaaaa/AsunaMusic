@@ -1,12 +1,7 @@
 import os
 from pyrogram import Client, idle
-from config import API_ID, API_HASH, BOT_TOKEN, SESSION_NAME
-
-User = Client(
-    SESSION_NAME,
-    API_ID,
-    API_HASH
-)
+from config import API_ID, API_HASH, BOT_TOKEN
+from AsunaMusic.plugins.nopm import User
 
 Bot = Client(
     ":memory:",
