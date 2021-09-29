@@ -7,6 +7,7 @@ import asyncio
 import subprocess
 from typing import Callable
 import requests
+import aiohttp
 import wget
 from asyncio import sleep
 from youtube_dl import YoutubeDL
