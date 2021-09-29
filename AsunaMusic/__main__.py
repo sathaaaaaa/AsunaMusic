@@ -13,10 +13,11 @@ Bot = Client(
 if not os.path.isdir("./downloads"):
     os.makedirs("./downloads")
 
-
+User.start()
+Bot.start()
 print("\n[INFO] - STARTED VIDEO PLAYER BOT, JOIN @ASMSAFONE !")
-
+idle()
 print("\n[INFO] - STOPPED VIDEO PLAYER BOT, JOIN @ASMSAFONE !")
-User.run()
-Bot.run()
+User.stop()
+Bot.stop()
 
