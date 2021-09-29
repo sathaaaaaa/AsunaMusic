@@ -221,7 +221,7 @@ async def play_command(client, message: Message):
         return await msg.edit("Processing...")
         if 'http' not in vid:
             try:
-                results = Videosearch(vid, max_results=5).to_dict()
+                results = YoutubeSearch(vid, max_results=5).to_dict()
             except:
                 await msg.edit("Give me something to play")
         # Looks like hell. Aren't it?? FUCK OFF
