@@ -27,6 +27,7 @@ from helpers.filters import command, other_filters
 from PIL import Image, ImageDraw, ImageFont
 from pyrogram.errors import UserAlreadyParticipant
 from Python_ARQ import ARQ
+from config import ARQ_API_KEY
 
 ydl_opts = {
         "quiet": True,
