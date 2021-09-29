@@ -2,7 +2,7 @@ import os
 from pyrogram import Client, idle
 from config import API_ID, API_HASH, BOT_TOKEN, SESSION_NAME
 
-USER = Client(
+User = Client(
     SESSION_NAME,
     API_ID,
     API_HASH
@@ -22,6 +22,6 @@ if not os.path.isdir("./downloads"):
 print("\n[INFO] - STARTED VIDEO PLAYER BOT, JOIN @ASMSAFONE !")
 
 print("\n[INFO] - STOPPED VIDEO PLAYER BOT, JOIN @ASMSAFONE !")
-USER.run()
+User.run()
 Bot.run()
 
