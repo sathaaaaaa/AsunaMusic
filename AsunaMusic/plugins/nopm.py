@@ -4,7 +4,7 @@ from config import BOT_NAME
 from pyrogram.errors import BotInlineDisabled
 from config import API_ID, API_HASH, SESSION_NAME
 
-USER = Client(
+User = Client(
     SESSION_NAME,
     API_ID,
     API_HASH
