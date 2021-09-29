@@ -11,7 +11,7 @@ User = Client(
 )
 
 REPLY_MESSAGE = """Hi I'm the userbot of the music player! Hehe Don't pm me lol"""
-@USER.on_message(filters.private & filters.incoming & ~filters.bot & ~filters.service & ~filters.me & ~filters.edited & ~filters.chat([777000, 454000]))
+@User.on_message(filters.private & filters.incoming & ~filters.bot & ~filters.service & ~filters.me & ~filters.edited & ~filters.chat([777000, 454000]))
 async def nopm(client, message):
     if REPLY_MESSAGE is not None:
         try:
