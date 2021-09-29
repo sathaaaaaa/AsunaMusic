@@ -22,6 +22,6 @@ if not os.path.isdir("./downloads"):
 print("\n[INFO] - STARTED VIDEO PLAYER BOT, JOIN @ASMSAFONE !")
 
 print("\n[INFO] - STOPPED VIDEO PLAYER BOT, JOIN @ASMSAFONE !")
-
-Bot.run()
 USER.run()
+Bot.run()
+
