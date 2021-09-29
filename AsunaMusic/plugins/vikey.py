@@ -253,21 +253,21 @@ async def play_command(client, message: Message):
                 [
                     [
                         InlineKeyboardButton(
-                            "1️⃣", callback_data=f"plll 0|{query}|{user_id}"
+                            "1️⃣", callback_data=f"plll 0|{vid}|{user_id}"
                         ),
                         InlineKeyboardButton(
-                            "2️⃣", callback_data=f"plll 1|{query}|{user_id}"
+                            "2️⃣", callback_data=f"plll 1|{vid}|{user_id}"
                         ),
                         InlineKeyboardButton(
-                            "3️⃣", callback_data=f"plll 2|{query}|{user_id}"
+                            "3️⃣", callback_data=f"plll 2|{vid}|{user_id}"
                         ),
                     ],
                     [
                         InlineKeyboardButton(
-                            "4️⃣", callback_data=f"plll 3|{query}|{user_id}"
+                            "4️⃣", callback_data=f"plll 3|{vid}|{user_id}"
                         ),
                         InlineKeyboardButton(
-                            "5️⃣", callback_data=f"plll 4|{query}|{user_id}"
+                            "5️⃣", callback_data=f"plll 4|{vid}|{user_id}"
                         ),
                     ],
                     [InlineKeyboardButton(text="❌ Close", callback_data="cls")],
