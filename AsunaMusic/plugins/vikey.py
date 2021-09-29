@@ -224,7 +224,7 @@ async def play_command(client, message: Message):
         user_name = message.from_user.first_name
         rpk = "[" + user_name + "](tg://user?id=" + str(user_id) + ")"
         return await msg.edit("Processing...")
-        if 'https' not in vid:
+        if 'http' not in vid:
             try:
                 results = Videosearch(vid, max_results=5).to_dict()
             except:
@@ -345,7 +345,7 @@ async def play_command(client, message: Message):
                     print(e)
     
     
-        elif 'https' in vid:
+        elif 'http' in vid:
             await msg.edit("**Processing**")
             try:
                 results = YoutubeSearch(vid, max_results=1).to_dict()
