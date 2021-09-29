@@ -180,7 +180,7 @@ async def play_command(client, message: Message):
     chatid = message.chat.id
     
     try:
-        await user = USER.get_me()
+        user = await USER.get_me()
     except:
         user.first_name = "helper"
     user = usar
